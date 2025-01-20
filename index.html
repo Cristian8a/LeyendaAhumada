@@ -24,10 +24,9 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#section0">Inicio</a></li>
+                    <li><a href="#section1">Productos</a></li>
+                    <li><a href="#section2">Contacto</a></li>
                 </ul>
             </nav>
             <div class="icons">
@@ -36,7 +35,7 @@
             </div>
         </div>
 
-        <div class="header-content container">
+        <div class="header-content container" id="section0">
             <div class="header-txt">
                 <h1>Leyenda Ahumada</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sed aperiam fugiat odio accusantium
@@ -80,7 +79,7 @@
     </header>
 
     <main>
-        <section class="info container">
+        <section class="info container" id="section1">
             <h2 class="info-title">Información de Producto</h2>
             <div class="cards">
                 <div class="card">
@@ -92,9 +91,9 @@
                     <p><strong>Tipo de Maguey</strong> <br> Manzo cenizo 60% y bruto 40%</p>
                     <p><strong>Fecha de destilación</strong> <br> Manzo cenizo 60% y bruto 40%</p>
                     <p><strong>Litros de producción</strong> <br> 1440</p>
-                    <p><strong>Elaboración</strong> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Velit quaerat saepe neque deleniti, nam vel ipsum voluptas animi laborum fuga ratione dolorum
-                        asperiores rem commodi repudiandae error ducimus harum sit?</p>
+                    <p><strong>Elaboración</strong> <br> Cocido en horno de tierra recubierto de piedra. Molido con
+                        molino eléctrico.Fermentadoen pilas recubiertas con azulejo. Destilado en destilador tipo
+                        árabede acero.</p>
                     <p><strong>40.1% alc. vol.</strong></p>
                 </div>
                 <div class="card">
@@ -114,7 +113,45 @@
             </div>
         </section>
 
+        <section class="contact container" id="section2">
+            <h2 class="contact-title">Contacta con Nosotros</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                </div>
+                <button type="submit" class="btn-2">Enviar</button>
+            </form>
+        </section>
+
     </main>
+
+
+    <footer>
+        <div class="footer container">
+            <div class="footer-content">
+                <h3>Leyenda Ahumada</h3>
+                <p>&copy; 2025</p>
+            </div>
+            <div class="footer-content">
+                <h3>Enlaces</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
