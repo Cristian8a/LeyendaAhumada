@@ -12,6 +12,8 @@ EMAIL_USER = 'tu_correo@gmail.com'  # Reemplaza con tu correo
 EMAIL_PASSWORD = 'tu_contraseña'    # Reemplaza con tu contraseña
 OWNER_EMAIL = 'correo_del_dueño@gmail.com'  # Reemplaza con el correo del dueño
 
+# Caracoles
+
 @app.route('/contact', methods=['POST'])
 def contact_form():
     try:
